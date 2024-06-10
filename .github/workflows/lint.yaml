@@ -1,0 +1,31 @@
+name: Ansible Lint
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  lint:
+    name: Lint Ansible role
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+      
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+
+    - name: Install dependencies
+      run: pip install ansible ansible-lint
+
+    - name: Run ansible-lint
+      run: ansible-lint
+
+    # You can add more steps for additional checks or tasks here
