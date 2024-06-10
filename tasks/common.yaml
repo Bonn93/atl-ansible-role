@@ -1,0 +1,14 @@
+---
+- name: Run Common tasks
+  ansible.builtin.package:
+    name:
+      - curl
+      - wget
+      - vim
+    state: present
+
+- name: Install pip3 docker
+  ansible.builtin.pip:
+    name:
+      - docker
+    state: present

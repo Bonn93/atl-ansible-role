@@ -1,0 +1,11 @@
+---
+- name: Run Common tasks
+  hosts: all
+  gather_facts: true
+  tasks:
+    - name: Include Common tasks
+      ansible.builtin.include_tasks: tasks/common.yaml
+      tags:
+        - common
+        - os
+        - packages
