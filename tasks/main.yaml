@@ -1,0 +1,16 @@
+---
+- name: Install Docker
+  # Task to install Docker, you can use a suitable package manager or script.
+
+- name: Pull Atlassian Data Center Docker image
+  # Task to pull the Docker image for the Atlassian Data Center product.
+
+- name: Create Docker container
+  # Task to create the Docker container for the Atlassian Data Center product.
+
+- name: Start Docker container
+  # Task to start the Docker container.
+
+- name: Configure Atlassian Data Center product
+  # Task to configure the Atlassian Data Center product as needed.
+

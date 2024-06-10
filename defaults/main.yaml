@@ -1,0 +1,25 @@
+# ---
+# Default variables for Atlassian Docker role
+
+# # Docker image name for the Atlassian Data Center product
+# atlassian_docker_image: "atlassian/confluence-data-center"
+
+# # Docker container name
+# atlassian_container_name: "confluence-container"
+
+# # Docker network name for Data Center clustering (if needed)
+# atlassian_docker_network: "confluence-network"
+
+# # Port mappings for the Docker container
+# atlassian_docker_ports:
+#   - "8090:8090"  # Confluence web interface port
+#   - "8091:8091"  # Confluence Synchrony (if used) port
+
+# # Volumes for the Docker container
+# atlassian_docker_volumes:
+#   - "/var/atlassian/confluence:/var/atlassian/confluence"
+
+# # Additional environment variables for the Docker container
+# atlassian_docker_env:
+#   - "TZ=UTC"  # Set timezone for the container
+#   - "LANG=en_US.UTF-8"  # Set language for the container
