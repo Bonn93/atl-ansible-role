@@ -1,4 +1,5 @@
 galaxy_info:
+  role_name: atlassian_datacenter_docker
   author: Max Bern
   description: An Ansible role for installing Atlassian Data Center products via Docker.
   license: Version 2.0
