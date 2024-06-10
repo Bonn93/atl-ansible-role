@@ -1,0 +1,5 @@
+# This file contains ignores rule violations for ansible-lint
+.github/workflows/lint.yaml yaml[indentation]
+.github/workflows/lint.yaml yaml[trailing-spaces]
+
+

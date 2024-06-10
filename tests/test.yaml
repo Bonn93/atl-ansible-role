@@ -4,7 +4,7 @@
   become: true
   tasks:
     - name: Include the role
-      include_role:
+      ansible.builtin.include_role:
         name: your_role_name_here
 
     # Add additional tasks to verify the role's behavior, such as checking if Docker containers are running,
